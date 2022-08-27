@@ -24,11 +24,11 @@ public class TypewiseAlert
 
       BreachType breachType = inferBreach(temperatureInC, coolingType.getLowerLimit(), coolingType.getUpperLimit());
       
-      return alertAction(breachType, alertTarget);
+      return alertActionSuccessful(breachType, alertTarget);
     }
 
    
-	private static boolean alertAction(BreachType breachType, AlertTarget alertTarget) {
+	private static boolean alertActionSuccessful(BreachType breachType, AlertTarget alertTarget) {
 		// TODO Auto-generated method stub
 		switch(alertTarget)
 	{
